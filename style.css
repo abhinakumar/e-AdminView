@@ -1,0 +1,21 @@
+/* Basic CSS for the layout */
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product-name {
+    font-weight: bold;
+  }
+  
+  .product-price {
+    margin-left: 10px;
+  }
+  

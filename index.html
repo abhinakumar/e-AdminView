@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin View</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5">Admin View</h1>
+  
+    <form id="addProductForm" class="mt-4">
+      <div class="form-group">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" class="form-control" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="productPrice">Product Price:</label>
+        <input type="number" id="productPrice" class="form-control" required>
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+    
+    <div class="product-list mt-4">
+      <h2>Product Listings</h2>
+      <div id="productsContainer"></div>
+      <p id="totalValue">Total Value: $0</p>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
